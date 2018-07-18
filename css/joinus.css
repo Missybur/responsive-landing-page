@@ -1,7 +1,7 @@
 .joinus-conatiner {
-    padding-right: 30%;
-    padding-left: 30%;
-    background: black;
+    /*padding-right: 25%;
+    padding-left: 25%;*/
+    /*background: black;*/
     height: 100%;
 }
 
@@ -15,4 +15,45 @@ p {
 
 .joinus-table {
   color: white;
+}
+
+body {
+  background: rgba(29,29,29,0.85);
+}
+
+div#mc_embed_signup_scroll {
+    /*background: black;*/
+}
+
+#mce-FNAME, #mce-LNAME {
+  width: 197px;
+  height: 48px;
+  opacity: 0.7;
+  font-family: .AppleSystemUIFont;
+  font-size: 12px;
+  color: #F9F9F9;
+
+}
+
+h2 {
+  color: white;
+  font-family: .SFNSDisplay;
+  font-size: 70px;
+  color: #F9F9F9;
+  line-height: 70px;
+}
+
+input {
+  margin: 20px 20px 20px 0px;
+}
+
+div#mc_embed_signup {
+    margin-left: 34%;
+    width: 407px;
+    height: 478px;
+    background: rgba(29,29,29,0.85);
+}
+
+form#mc-embedded-subscribe-form {
+    background: rgba(29,29,29,0.85);
 }
