@@ -1,24 +1,8 @@
 /* Navbar*/
 
-/*.navbar {
-    background-color: black;
-}
-
-.navbar div li {
-    list-style: none;
-}
-.navbar div li a {
-    color: #fff;
-}
-
-.right-nav {
-    white-space: nowrap;
-}*/
-
 .navbar {
   display: flex;
   height: 50px;
-  /* optional; just for demo */
   background: black;
 }
 
@@ -44,6 +28,12 @@
     padding: 10px;
     color: white;
 }
+
+#treeti {
+    color: #EFC538;
+}
+
+/* Scroll */
 
  video {
      position: fixed;
@@ -336,3 +326,4 @@
          right:-270%;
     }
 }
+
