@@ -1,39 +1,12 @@
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
+   $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
+      var $target = $( event.currentTarget );
 
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
+      $target.closest( '.btn-group' )
+         .find( '[data-bind="label"]' ).text( $target.text() )
+            .end()
+         .children( '.dropdown-toggle' ).dropdown( 'toggle' );
 
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-});
+      return false;
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#menu-center a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
+   });
