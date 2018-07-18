@@ -121,5 +121,13 @@ button.btn.btn-outline-secondary.dropdown-toggle {
 
 }
 
+#terms {
+  float: right;
+}
+
+input#agree {
+    float: left;
+}
+
 
 
